@@ -5,8 +5,8 @@ int get_positive_int(string prompt);
 int main(void)
     
 {    
-    //Get "Height" from 
-    int n = get_int("Height:");
+    //Get "Height" from user
+    int n = get_positive_int("Height:");
     int i, j; 
     //Nested loops
     {
@@ -24,6 +24,17 @@ int main(void)
        
         }
     }
-        
-    
+  
+}
+
+//Function get Height from user until it will fit between 1 & 7
+int get_positive_int(string prompt)
+{
+    int n;
+    do
+    {
+        n = get_int("%s", prompt);
+    }
+    while (n > 8 || n < 1);
+    return n;
 }
