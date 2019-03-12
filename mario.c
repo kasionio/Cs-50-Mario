@@ -1,3 +1,5 @@
+//CS50 Lecture 2 Mario.c IDE https://sandbox.cs50.io
+
 #include <cs50.h>
 #include <stdio.h>
 
